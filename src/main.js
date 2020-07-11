@@ -1,60 +1,86 @@
-const container = document.querySelector("#container");
-const createDiv = document.createElement('div');
-const createDiv2 = document.createElement('div');
-const createH1 = document.createElement('h1');
-const createH3 = document.createElement('h3');
-const createP = document.createElement('p');
-const createP2 = document.createElement('p');
-const btn = document.querySelector(".btn");
-const btnTwo = document.getElementById("btn-2");
-const inputButtons = document.querySelectorAll('button');
+const gridContainer = document.getElementById('grid-container');
+
+document.onload = fillGrid(16);
+
+document.getElementById('clear-board').addEventListener('click', clearBoard)
+gridContainer.addEventListener('mouseover', changeBackground);
+
+function fillGrid(number) {
+    let gridItems = [];
+        console.log(
+            'this(Window).innerHeight: ', this.innerHeight, 
+            'this.innerWidth: ', this.innerWidth,
+            'number: ', number,
+        );
+    let shortDivSide = this.innerHeight < this.innerWidth ? this.innerHeight : this.innerWidth;
+    let extraRoomNum = number + number/5;   
+    let mainSize = shortDivSide - (shortDivSide/10);    
+    let divSize = mainSize / extraRoomNum;
+
+    console.log(
+        'shortDivSide: ', shortDivSide,
+        'number: ', number, 
+        'extraRoomNum: ', extraRoomNum, 
+        'mainSize: ', mainSize,
+        'divSize: ', divSize,
+    );
+
+    for (let i = 0; i < Math.pow(number, 2); i++) {
+        const gridDiv = document.createElement("div");
+        //gridDiv.innerText = i + 1;
+        gridDiv.id = `item${i}`;   
+        gridDiv.setAttribute('style', `width: ${divSize}px; padding: ${divSize*.5}px`);
+            console.log('gridDiv.style.padding: ', gridDiv.style.padding);
+        gridItems.push(gridDiv);
+    };
+    console.log(
+        'gridItems(#): ', gridItems.length, 
+        'gridItems[0].id: ', gridItems[0].id,
+    );    
+    gridContainer.setAttribute('style', `grid-template-columns: repeat(${number}, auto); grid-template-rows: repeat(${number}, auto)`)
+    gridItems.forEach(function(div) {
+        div.classList.add("grid-item");       
+        gridContainer.appendChild(div);
+    });
+        console.log('div#grid-item.style.padding: ', gridContainer.children[0].style.padding);  
+}
+        //const gridDivP = document.createElement("p");
+        //gridDivP.innerText = i + 1;
+        //gridDiv.appendChild(gridDivP);
 
 
-createDiv.classList.add('content');
-createDiv.textContent = 'This is the glorious text-content!';
-
-createP.classList.add('p-red');
-createP.innerText= "Hey I'm red!"
-createP.style.color= "red";
-
-createH3.classList.add('h3-blue');
-createH3.innerText = "I'm a blue h3!"
-createH3.style.color="blue";
-
-container.appendChild(createDiv);
-container.lastChild.appendChild(createP);
-createP.insertAdjacentElement("beforebegin", createH3);
-
-createDiv2.classList.add('div2');
-createDiv2.setAttribute('style', 'border:black 1px solid; background-color: pink;');
-
-createH1.classList.add('h1-inside');
-createH1.innerText = "I'm In a Div";
-
-createP2.classList.add('p-inside');
-createP2.innerText = "ME TOO!";
-
-createDiv2.appendChild(createH1);
-createDiv2.appendChild(createP2);
-container.appendChild(createDiv2);
+    // gridContainer.style.gridTemplateColumns = `repeat(${number}, auto)`;
+    //     console.log('gridContainer.style.gridTemplateColumns: ', gridContainer.style.gridTemplateColumns);
+    // gridContainer.style.gridTemplateRows = `repeat(${number}, auto)`;
 
 
-btnTwo.addEventListener("click", btnAlert); 
+function changeBackground() {
+    console.log("event...= ", event.target.id);
+    let itemID = event.target.id;
+    if (itemID.includes("item")) {
+        let elementID = document.getElementById(itemID);
+        console.log('elementID: ', elementID);    
+        elementID.classList.add("purple");
+    };
+}
 
-function btnAlert(event) {
-    console.log(event.target);
-    event.target.setAttribute('style', 'background: blue; color: white');
-    alert("Hello World");
-};
+function clearBoard() {
+    const allGridItems = document.querySelectorAll(".grid-item");
+    allGridItems.forEach(function(item) {
+        item.classList.remove("purple");
+        gridContainer.removeChild(item)
+    });        
+    console.log('gridContainer.children: ', gridContainer.children);
+    promptGridNumber();
+}
 
-btn.onclick = () => alert("Hello World");
+function promptGridNumber() {
+    const gridNumMessage = "What size board would you prefer? The default value is 16 (16x16)"
+    let gridNum = prompt(gridNumMessage, 16);
+    console.log('gridNum: ', gridNum);
+    fillGrid(Number(gridNum));
+}
 
-inputButtons.forEach(function(button) {
-    button.addEventListener('click', alertAllButtons)
-});
 
-function alertAllButtons() {
-    alert(event.target.id);
-};
 
-               
+
