@@ -1,84 +1,79 @@
 * {
-    box-sizing: border-box;   
-}
-
-header {
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 10vh; 
-    border: white 2px dotted;
-    padding: 0 20px 0 20px;    
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
     width: 100vw;
     height: 100vh;
     background-color: black;
-    display: grid;
-    justify-content: center;
-    margin: 0 0 0 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    margin-bottom: 3vh; 
+    padding: 1vh 50px 0px 50px;    
+}
+
+.header-text {
+    width: 100%;
+    font-size: x-large;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: silver;
+}
+
+#clear-board {
+    width: 170px;
+    padding: 5px;
+    margin: 5px 0px 5px 0;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: silver;
+    border: silver 2px solid;
 }
 
 main {
     width: 100vw; 
-    height: 90vh;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    border: white 3px dashed;
+    height: 85vh;
 }
 
 #grid-container {
     display: grid;
     height: auto;
-    justify-content: center; 
-}
-
-.header-text {
-    width: 100%;
-}
-
-#clear-board {
-    width: 170px;
-    height: auto;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 5px;
-    margin: 5px 0px 5px 0;
-    border: cyan 2px solid;
-    font-size: 15px;
 }
 
 .grid-item {
-    border: cyan .0588vw solid;
-    /* border: cyan 1vw solid; */
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5px;
-    /* padding: 10px 0 5px 0; */    
+    border: black 1px solid;
 }
 
 .grid-item:hover {
-    border: purple 1px solid;
+    border: silver 1px solid;
 }
 
 .purple {
     background-color: purple;
+    border: purple 1px solid;
 } 
 
-/*
-#grid-container {    
-    display: grid;
-    justify-content: center; 
-    /*
-    grid-template-columns: repeat(16, 50px);
-    grid-template-rows: repeat(16, 50px);
-    align-items: center;
-    grid-gap: 5px 5px; 
-    *//*
+.border-top {
+    border-top: silver 2px solid; 
 }
-*/
+
+.border-right {
+    border-right: silver 2px solid; 
+}
+
+.border-bottom {
+    border-bottom: silver 2px solid; 
+}
+
+.border-left {
+    border-left: silver 2px solid; 
+}
+
