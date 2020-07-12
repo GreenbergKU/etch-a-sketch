@@ -1,14 +1,17 @@
 ---
-PROJECT: (NAME)
-PROGRAM: (NAME)
+PROJECT: ETCH-A-SKETCH
+DESCRIPTION: DOM MANIPULATION
+PROGRAM: ODIN
 NAME: SUZIE Q
-DATE: 00/00/2020
-file name: greenbergKU's README template
+COURSE: Web Development 101
+DATE: 07/08/2020
+FILE: greenbergKU's README
+
 ---
 
-
+<!-- 
 # MY repository-template
----
+--- -->
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/GreenbergKU/intention-timer-m12005)
 ![GitHub contributors](https://img.shields.io/github/contributors/GreenbergKU/intention-timer-m12005)
@@ -28,62 +31,62 @@ file name: greenbergKU's README template
 -->
 ---
 
-# PROJECT NAME: type project
-![Leta's slack profile picture (small)](https://ca.slack-edge.com/T029P2S9M-U37MJAV0T-007ccf2f5eb2-72)
+# PROJECT: ETCH-A-SKETCH
+<!-- ![Leta's slack profile picture (small)](https://ca.slack-edge.com/T029P2S9M-U37MJAV0T-007ccf2f5eb2-72)
 ![Casey](https://ca.slack-edge.com/T029P2S9M-U6VMF6L85-fa69b231d590-72)
-![Scott](https://ca.slack-edge.com/T029P2S9M-UJ910QEJF-7244f37f7e12-72)
+![Scott](https://ca.slack-edge.com/T029P2S9M-UJ910QEJF-7244f37f7e12-72) -->
 
-![Sue's slack profile picture (small)](https://ca.slack-edge.com/T029P2S9M-UTPTTDE84-13b671276cf8-72)
-![name](https://ca.slack-edge.com/T029P2S9M-UTPTTDE84-13b671276cf0-72)
+<!-- ![Sue's slack profile picture (small)](https://ca.slack-edge.com/T029P2S9M-UTPTTDE84-13b671276cf8-72) -->
+<!-- ![name](https://ca.slack-edge.com/T029P2S9M-UTPTTDE84-13b671276cf0-72)
 ![name](https://ca.slack-edge.com/T029P2S9M-UTPTTDE84-13b671276cf0-72)
 
 * project manager: __Leta__ [(GitHub profile)](https://github.com/turingschool-examples)
 * project manager: __Casey__ [(github)](https://github.com/turingschool-examples)
-* project manager: __Scott__ [(github)](https://github.com/turingschool-examples)
+* project manager: __Scott__ [(github)](https://github.com/turingschool-examples) -->
 
 
-* contributer: __Sue__ [(GitHub profile)](https://github.com/GreenbergKU)
-* contributer: __`${username}`__ <[(github)](https://github.com/`${username}`)>
-* contributer: __`${username}`__ <[(github)](https://github.com/`${username}`)>
+
+<!-- * contributer: __`${username}`__ <[(github)](https://github.com/`${username}`)>
+* contributer: __`${username}`__ <[(github)](https://github.com/`${username}`)> 
 ---
-
+-->
 
 <!-- 
 [(GitHub profile)](https://github.com/GreenbergKU)  
 
 <img width="250" alt="Mobile_Layout_card_Example-20200411_333AM" src="https://user-images.githubusercontent.com/10098034/79301108-e383f100-7ea5-11ea-849f-996531f06cd1.png">
--->
+
 ---
 ---
 # *** IMAGE as a LINK  ***
+-->
 
-contributer:  
-**Sue Wolf**   
 [![Sue's slack profile picture (small)](https://ca.slack-edge.com/T029P2S9M-UTPTTDE84-13b671276cf8-72)](https://github.com/GreenbergKU "GreenbergKU's GitHub profile")  
-GitHub username:  
-[GreenbergKU](https://github.com/GreenbergKU)  
+
+* contributer: __Sue Wolf__ [(personal website)](https://github.com/GreenbergKU)
+* GitHub username: [GreenbergKU](https://github.com/GreenbergKU)  
 <br>
 
-<br>
 
-### **TABLE SYNTAX:**
+
+<!-- ### **TABLE SYNTAX:**
 
 | `div style="text-align:left"` | `div style="text-align:center"` | `div style="text-align:right"` |  
 |:-----------------|:----------------------:|-----------------------:|
 |  example1  |  example2  |  example3  |
 <br>
 <section style="display:inline-flex; width:100vw">
-    <!-- spacer -->
+
 <img width="70" alt="" src="">
-    <!-- spacer -->
+
 <div style="text-align:left; justify-self:start">created by:   
 
   [![Sue's slack profile picture (small)](https://ca.slack-edge.com/T029P2S9M-UTPTTDE84-13b671276cf8-72)](https://github.com/GreenbergKU "GreenbergKU's GitHub profile")
   <h2><b>Sue Wolf</b></h2>
 </div>  
-     <!-- spacer -->
+  
 <img width="150" alt="" src="">
-      <!-- spacer -->
+
 <div style="text-align:center; justify-self:center">
 
   [<img width="150" alt="Sue's slack profile picture" src="https://ca.slack-edge.com/T029P2S9M-UTPTTDE84-13b671276cf8-72">](https://github.com/GreenbergKU "GreenbergKU's GitHub profile")
@@ -91,9 +94,9 @@ GitHub username:
 </div>
 
 <div style="text-align:right; display:flex">
-  <!-- spacer -->
+
 <img width="100" alt="" src="https://ca.slack-edge.com/T029P2S9M-UTPTTDE84-100">
-  <!-- spacer -->
+
 
   [![Sue's slack profile picture (small)](https://ca.slack-edge.com/T029P2S9M-UTPTTDE84-13b671276cf8-150)](https://github.com/GreenbergKU "GreenbergKU's GitHub profile")  
 </div>
@@ -115,17 +118,17 @@ GitHub username:
 <br>
 
 -->
-## Brief Synopsis
+<!-- ## Brief Synopsis
 
 Every developer has more ideas than time...
 
-
+ -->
 ## Learning Goals
 
 * Continue to improve on...
 * Understand how to implement...
 
-## For more information and additional LINKS
+<!-- ## For more information and additional LINKS
 
 - this is how to link in markdown
  - [Download this `svg` icons file](https://drive.google.com/drive/folders/18xpWplI0tpXIK1omBZeq04LEx2OMzzMK?usp=sharing)
@@ -142,18 +145,18 @@ Every developer has more ideas than time...
   - ``` ![alt text](https://user-images.githubusercontent.com/10098034/79301108-e383f100-7ea5-11ea-849f-996531f06cd1.png) ```
   - can't control size of image with this style
 
-<!--
+
 - Go checkout the [IDEABOX project website](https://marchcorbin.github.io/ideabox-boilerplate/) on Github Pages.
 - [Ideabox boilerplate repository](https://github.com/turingschool-examples/ideabox-boilerplate): the origonal project on Github.
 - (private) project [Slack channel:](https://app.slack.com/client/T029P2S9M/C011E891RC1)
 - IDEABOX documention:
    - [DTR](https://github.com/MarchCorbin/ideabox-boilerplate/blob/master/DTR.md)
    - [Pull Request Template](https://github.com/MarchCorbin/ideabox-boilerplate/blob/master/pull_request_template.md) (image provided below)
--->
 
-# PROJECT IDEABOX:
+ -->
+# ETCH-A-SKETCH:
 
-### ITERATION 0:
+### STEP 1:
 
 #### Brief Synopsis of Objectives
 * Plan then write the HTML and CSS...
@@ -178,7 +181,7 @@ DIRECTIONS:
 
 ##### `  Pull Request Template: Customized to include only relevant features pertaining to this project  `
 
-  ![This is the customized Pull Request Template :](https://user-images.githubusercontent.com/10098034/79298038-22fa0f80-7e9d-11ea-8475-774b4ab71b54.png) <br>
+  <!-- ![This is the customized Pull Request Template :](https://user-images.githubusercontent.com/10098034/79298038-22fa0f80-7e9d-11ea-8475-774b4ab71b54.png) <br> -->
 
 
 ##### `  img title/description/caption  `
@@ -186,7 +189,7 @@ DIRECTIONS:
 <img width="1000" alt="screenshot of Desktop Layout View after Iteration 0 complete" src="https://user-images.githubusercontent.com/10098034/79301186-25149c00-7ea6-11ea-83da-ebffbc945a6b.png">
 -->
 
-### ITERATION 1: MOBILE LAYOUT
+### STEP 2:
 
 #### Brief Synopsis of Objectives
 <!--

@@ -5,8 +5,7 @@ PROGRAM: ODIN
 NAME: SUZIE Q
 COURSE: Web Development 101
 DATE: 07/08/2020
-FILE: greenbergKU's README
-
+FILE: repo-template's README.md
 ---
 
 
